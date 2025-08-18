@@ -4,5 +4,5 @@ def main():
 
 
 def hello(to="world"):
-    printf(f"hello, {to}")
+    print(f"hello, {to}")
 main()
