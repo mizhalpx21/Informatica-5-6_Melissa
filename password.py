@@ -1,5 +1,7 @@
+import getpass
+
 def main():
-    password = input("Set a password: ")
+    password = getpass.getpass("Set a password: ")
     input("Press enter to long in.")
     check_password(password)
 
