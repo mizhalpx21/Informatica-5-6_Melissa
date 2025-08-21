@@ -10,6 +10,7 @@ def check_password(password):
 
     if guess != password:
         print("Get away from the keyboard you imposter!")
+    print("The program has ended")
 
 main()
     
