@@ -20,8 +20,3 @@
 
 #main()
 
-def main():
-    arithmetic_expression = input("Write an arithmetic expression: ")
-    print(calculating )
-
-main()
