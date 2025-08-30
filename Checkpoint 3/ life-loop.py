@@ -6,9 +6,9 @@ def main():
     while daily:
     
         if daily == option1:
-            print("A new day has started! Remember God loves you and wants you to talk to him❤️  SO DO NOT FORGET TO PRAY")
+            print("A new day has started! God loves you and wants you to talk to him❤️  SO REMEMBER TO PRAY")
         elif daily == option2:
-            print("The day has ended! God wants to now how was your day, SO DO NOT FORGET TO PRAY") 
+            print("The day has ended! God wants to now how was your day, SO REMEMBER TO PRAY") 
         else:
             print("Okay, I hope you have a pretty good day") 
         break
