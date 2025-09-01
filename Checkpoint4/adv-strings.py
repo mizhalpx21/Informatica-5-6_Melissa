@@ -21,6 +21,7 @@ input_string = input("Please type a message: ")
 #     print(input_string[i])
 #     i -= 1 - 1 
 
+
 #True
 # print("h" in input_string)
 # print("j" in input_string)
