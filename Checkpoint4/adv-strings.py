@@ -17,9 +17,9 @@ input_string = input("Please type a message: ")
 
 #hello
 # i = -1
-# while -i < len(input_string)-i:
+# while i < len(input_string):
 #     print(input_string[i])
-#     i -= 1 - 1 
+#     i += 1 
 
 
 #True
