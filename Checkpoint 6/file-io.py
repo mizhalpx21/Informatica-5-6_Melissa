@@ -22,5 +22,5 @@
 with open("names.txt", "r") as file:
     lines = file.readlines()         #read each line to make a list
 
-for line in lines: 
-    print(f"Hello{line.rstrip()}")   #adds a hello in each line
+for line in sorted(lines): 
+    print(f"Hello {line.rstrip()}") #adds a hello in each line
