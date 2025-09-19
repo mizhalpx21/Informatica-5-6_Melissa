@@ -9,7 +9,7 @@ def main():
     print(max(number_list))
     file = open("largest.txt", "a")
     file.write(f"{number_list}\n")
-   # print(max(number_list("largest.txt")))
+    
 
 
 main()
