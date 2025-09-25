@@ -25,6 +25,12 @@
 # Matrices 
 matrix = [[1,2,3,],[4,5,6],[7,8,9]]
 #Print rows
+list1 = []
+list2 = []
+list3 = []
+
+i = 0
 for row in matrix:
     print(row)
-    for column in matrix:
+    for column in row:
+        new_list.append(column)
