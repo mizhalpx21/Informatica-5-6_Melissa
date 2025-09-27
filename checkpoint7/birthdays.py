@@ -1,11 +1,21 @@
-birthdays = [
-    {"name": "Renata", "birthday": "March 29th"},
-    {"name": "Shensi", "birthday": "March 9th"},
-    {"name": "Aileen", "birthday": "October 1st"}
+birthdays = {
+    "Renata": "March 29th",
+    "Shensi": "March 9th",
+    "Aileen": "October 1st"
 
-]
+}
 
 name = input("Enter a name from the dictionary: ") 
-
 if name in birthdays:
-    print(f"{name}: {name[name]}, {birthday}:")
+    print(f"{birthdays[name]} is the birthday of {name}.")
+
+else:
+    print(f"I do not have birthday information for {name}")
+    new = input("When is his or her birthday? ")
+    birthdays[f"{name}"] = new
+    print(f"{new}")
+    print("Birthday database updated.")
+    
+
+    
+    

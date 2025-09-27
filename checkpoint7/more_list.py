@@ -14,7 +14,7 @@
 # super_list = [[5,2,3],[4,1],[2,2,5,1]]
 # print(super_list[1][0])
 
-# grades = [["Shakira", 8, "D"],["Melissa", 0, "C"],["Shensi", 10, "A"]]
+# grades = [["Shakira", 8, "D"],["Melissa", 1000, "C"],["Shensi", 10, "A"]]
 # for student in grades:
 #     name = student[0]
 #     grade = student[1]
@@ -23,14 +23,11 @@
 
 
 # Matrices 
-matrix = [[1,2,3,],[4,5,6],[7,8,9]]
+matrix = [[1,2,3,],[4,5,6],[7,8,9]] #Defining a variable
 #Print rows
-list1 = []
-list2 = []
-list3 = []
+for row in matrix: #This will go through each row of the matrix
+    print(row) #Will prit the row
 
-i = 0
-for row in matrix:
-    print(row)
-    for column in row:
-        new_list.append(column)
+for column in range(3): #This line goes through the rows and takes one value from it
+    print([row[column] for row in matrix]) #This lines goes through the matriz, row for row, and prints the element of each row  
+
