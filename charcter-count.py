@@ -4,10 +4,9 @@ def character_counter(message, dictionary):
         dictionary[character] += 1
     
     print(dictionary)
-    print
+    print(len(dictionary)) 
 
 message = input("Write a message: ")
 dictionary = {} 
 character_counter(message, dictionary)
 # print(message[0])
-
