@@ -20,9 +20,8 @@ for i in dictionary.items():
     print(i)
 
 #Print key and value using methods
-#To do
-print(dictionary.keys)
-for k in dic
+for key, value in dictionary.items():
+    print(f"{key}: {value}")
 
 #Get
 picnic_items = {"apples": 5, "cups": 2}
