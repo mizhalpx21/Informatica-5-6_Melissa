@@ -15,5 +15,14 @@
 # print(statistics.mean([100,90])) #Prints the mean of 100 plus 90
 # print(statistics)
 
+import cowsay
 import sys
-print("Hello, my name is", sys.argv[1])
+try:
+    cowsay.cow("Hello, my name is", sys.argv[1])   #An argument is what is inside the quotation marks
+except IndexError:
+ #   print("Too few arguments")
+    sys.exit()
+
+# import statistics
+# import sys    #Access library
+# print(statistics.mean([int(sys.argv[1]), int(sys.argv[2])]))   
