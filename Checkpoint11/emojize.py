@@ -1,3 +1,3 @@
 import emoji
 str = print("Enter your text: ")
-print(emoji.emojize('Python is :thumbs_up:' ))
+print(emoji.emojize(str))
