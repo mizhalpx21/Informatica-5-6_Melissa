@@ -1,3 +1,3 @@
 import emoji
-str = print("Enter your text: ")
-print(emoji.emojize(str))
+string = input("Enter your text: ")
+print(emoji.emojize(string))
