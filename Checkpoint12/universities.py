@@ -9,7 +9,7 @@ universities = {
         "carrers" : 19,
         "cost" : 60000,
         "closest campus" : "Chihuahua"},
-    "UT Paquime" : {
+    "UT PAQUIME" : {
         "carrers" : 4,
         "cost" : 1800,
         "closest campus" : "Nuevo Casas Grandes"},
@@ -24,11 +24,14 @@ def main():
     clean_list = "\n".join(universities)
     print(f"Universities: {clean_list}")
 
-    uni = input("Write the name of a University: ")
+    uni = input("Write the name of a University: ").upper()
     while uni not in universities:
         uni = input("Not found. Try again: ")
-    if uni ==
 
+    import requests
+    univers = "https://raw.githubusercontent.com/Hipo/university-domains-list/refs/heads/master/world_universities_and_domains.json"
+    
+        
 
 main()
  
