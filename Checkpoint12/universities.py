@@ -1,3 +1,4 @@
+import requests
 universities = {
    "URN": {"carrers": 3,
         "cost" : 2755,
@@ -28,9 +29,8 @@ def main():
     while uni not in universities:
         uni = input("Not found. Try again: ")
 
-    import requests
-    univers = "https://raw.githubusercontent.com/Hipo/university-domains-list/refs/heads/master/world_universities_and_domains.json"
-    
+    api= requests.get("http://universities.hipolabs.com/search?name="+universities[uni]["official_name"])
+    print(api.json())
         
 
 main()
