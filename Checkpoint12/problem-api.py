@@ -20,10 +20,7 @@ print(f"\nSelected tone: {skin_tones[user_tone]}\n")
 product = [
     "eyeshadow",
     "lipstick",
-    "eyeliner",
-    "mascara",
     "lip_liner",
-    "bronzer",
     "blush",
     "foundation"
 ]
