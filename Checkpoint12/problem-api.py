@@ -60,7 +60,7 @@ for item in products:
 print(f"Recommendations for {product_choice} ({skin_tones[user_tone]}):\n")
 
 if recommended_colors:
-    for c in set(recommended_colors):
-        print(f"- {c}")
+    for color in recommended_colors:
+        print("-", color)
 else:
-    print("No recommended shades found for this product based on your skin tone.")
+    print("No shades found.")
