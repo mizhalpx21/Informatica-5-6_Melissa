@@ -60,7 +60,7 @@ for item in products:        #It goes through each product that the API sends
                     break
 # all this is to get the best color in the API for our skin tone
 
-print(f"Recommendations for {product_choice} ({skin_tones[user_tone]}): ")   #It prints the title that shows the product and its description
+print(f"Recommendations for {product_choice} ({skin_tones[user_tone]}): ")   #It prints the title that shows the product and its description.
 
 if recommended_colors:         #If we find recommended colors
     for color in recommended_colors:     #Then it goes through each color of the final list and...
