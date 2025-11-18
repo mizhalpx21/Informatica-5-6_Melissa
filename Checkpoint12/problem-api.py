@@ -1,7 +1,7 @@
-import requests
+import requests        #It ass the data of the API's makeup
 
-print("Welcome to our makeup API, we are going to help you find the perfect makeup for you from the brand Mabelling!!!")
-skin_tones = {
+print("Welcome to our makeup API, we are going to help you find the perfect makeup for you from the brand Mabelling!!!") #Prints a message 
+skin_tones = {                             #A dictionary where the keys are 1 to 6 and the values are the description of the skin tone
     "1" : "Light,pale white", 
     "2" : "White, fair",
     "3" : "Medium, white to olive",
@@ -9,7 +9,8 @@ skin_tones = {
     "5" : "Brown, dark brown",
     "6" : "Brown, very dark, brown to black"
 }
-print("\nSkin tone options:")
+
+print("Skin tone options:")       #Prints the title
 for key in skin_tones:
     print(f"{key}. {skin_tones[key]}")
 
@@ -51,11 +52,13 @@ recommended_colors = []
 
 for item in products:
     if item["product_type"] == product_choice:
-        if item["product_colors"]:
-            for color in item["product_colors"]:
-                color_name = color["colour_name"].lower()
-                if any(k in color_name for k in makeup):
+        for color in item.get("product_colors", []):
+            name = color["colour_name"].lower()
+            for k in makeup:
+                if k in name:
                     recommended_colors.append(color["colour_name"])
+                    break
+
 
 print(f"Recommendations for {product_choice} ({skin_tones[user_tone]}):\n")
 
