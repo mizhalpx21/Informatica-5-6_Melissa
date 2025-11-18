@@ -35,7 +35,7 @@ product_choice = input("Enter the product you want: ").lower() #Asks the user fo
 
 web = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"   #Products from the maybelline brand
 response = requests.get(web)     #It will get the answer from the web variable
-products = response.json()    #  
+products = response.json()      
 
 recommendation = {                #It defines another dictionary and for each number or skin tone it will send color recommendations and it will compare the color from the API and see if it it matches  
     "1": ["ivory", "rose", "pink", "light", "soft", "nude"],
@@ -46,19 +46,19 @@ recommendation = {                #It defines another dictionary and for each nu
     "6": ["espresso", "chocolate", "burgundy", "dark"]
 }
 
-makeup= recommendation[user_tone]
+makeup= recommendation[user_tone]      #
 
 recommended_colors = []    #This creates an empty list that will be used to store the names of the matching colors
 
 for item in products:        #It goes through each product that the API sends
     if item["product_type"] == product_choice: #It checks if the product is the same as the user chose
-        for color in item.get("product_colors", []): #It takes each color of the product and 
-            name = color["colour_name"].lower()   #
-            for k in makeup:
-                if k in name:
-                    recommended_colors.append(color["colour_name"])
+        for color in item.get("product_colors", []): #It takes each color of the product and...
+            name = color["colour_name"].lower()  #it takes the name of the color in the API and it store it in the variable name 
+            for k in makeup:      #this is the color of product recommended for our skin tone
+                if k in name:  #we are checking if the word is inside the color name
+                    recommended_colors.append(color["colour_name"])     #if it is found, it is added to the final color list
                     break
-
+# all this is to get the best color in the API for our skin tone
 
 print(f"Recommendations for {product_choice} ({skin_tones[user_tone]}): ")   #It prints the title that shows the product and its description
 
